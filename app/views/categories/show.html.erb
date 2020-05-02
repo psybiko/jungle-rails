@@ -9,6 +9,13 @@
 
   <div class="products">
     <%= render @products %>
+    <% @products.each do |item| %>
+      <% if item.quantity == 0 %>
+      <aside class="sold-out">
+        SOLD OUT!
+      </aside>
+      <% end %>
+    <% end %>
   </div>
 
 </section>
