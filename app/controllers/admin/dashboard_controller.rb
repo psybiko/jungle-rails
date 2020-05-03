@@ -4,4 +4,5 @@ class Admin::DashboardController < ApplicationController
   if: -> { ENV["ADMIN_PASSWORD"].present? }
   def show
   end
+
 end
